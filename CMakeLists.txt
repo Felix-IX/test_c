@@ -3,4 +3,7 @@ project(test_c)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(test_c main.cpp)
+add_executable(test_c
+    main.cpp
+    math.cpp
+)

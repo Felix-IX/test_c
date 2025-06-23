@@ -1,13 +1,27 @@
+#include <cstdlib>
 #include <iostream>
+#include <ostream>
+#include "math.hpp"
+
+using namespace std;
 
 int main() {
-    auto s = "Hello World! ";
+    int a, b;
+    int result;
+    int x;
 
-    std::cout << s << "C++" << "!" << std::endl;
+    cout << "Pick two integers: " << endl;
+    cin >> a;
+    cin >> b;
 
-    for (int i = 1; i <= 10; i++) {
-        std::cout << "i = " << i << std::endl;
-    }
+    result = mul(a, b);
+
+    cout << result << endl;
+
+    x = abs(result);
+
+    cout << x << endl;
 
     return 0;
 }
+
