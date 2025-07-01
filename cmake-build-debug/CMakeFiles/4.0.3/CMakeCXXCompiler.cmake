@@ -32,9 +32,9 @@ set(CMAKE_CXX_COMPILER_RANLIB "/usr/bin/llvm-ranlib-19")
 set(CMAKE_LINKER "/usr/bin/ld.lld-19")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
-set(CMAKE_CXX_COMPILER_LINKER "/usr/bin/ld")
-set(CMAKE_CXX_COMPILER_LINKER_ID "GNU")
-set(CMAKE_CXX_COMPILER_LINKER_VERSION 2.42)
+set(CMAKE_CXX_COMPILER_LINKER "/usr/lib/llvm-19/bin/ld.lld")
+set(CMAKE_CXX_COMPILER_LINKER_ID "LLD")
+set(CMAKE_CXX_COMPILER_LINKER_VERSION 19.1.1)
 set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT GNU)
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
@@ -98,11 +98,11 @@ set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/usr/lib/llvm-19/lib/clang/19")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
 ### Imported target for C++23 standard library
-set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: Unix Makefiles")
+set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Experimental `import std` support not enabled when detecting toolchain; it must be set before `CXX` is enabled (usually a `project()` call)")
 
 
 ### Imported target for C++26 standard library
-set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: Unix Makefiles")
+set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Experimental `import std` support not enabled when detecting toolchain; it must be set before `CXX` is enabled (usually a `project()` call)")
 
 
 

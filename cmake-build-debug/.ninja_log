@@ -1,0 +1,7 @@
+# ninja log v5
+1	72	1751333666446487018	CMakeFiles/test_c.dir/main.cpp.o.ddi	f6df6bc1d710237f
+73	79	1751333666460486995	CMakeFiles/test_c.dir/CXX.dd	81354c21db7b58f3
+73	79	1751333666460486995	/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/test_c.dir/CXXModules.json	81354c21db7b58f3
+73	79	1751333666460486995	CMakeFiles/test_c.dir/main.cpp.o.modmap	81354c21db7b58f3
+79	839	1751333667212485742	CMakeFiles/test_c.dir/main.cpp.o	25ec58942208aa77
+840	918	1751333667290485612	test_c	712349655c275b5

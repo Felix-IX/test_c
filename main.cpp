@@ -1,26 +1,14 @@
-#include <cstdlib>
 #include <iostream>
-#include <ostream>
-#include "math.hpp"
-
 using namespace std;
 
-int main() {
-    int a, b;
-    int result;
-    int x;
+int main () {
+    int a[20] {0};
+    int num = 300;
 
-    cout << "Pick two integers: " << endl;
-    cin >> a;
-    cin >> b;
-
-    result = mul(a, b);
-
-    cout << result << endl;
-
-    x = abs(result);
-
-    cout << x << endl;
+    for (int i : a) {
+        a[i] = num++;
+        cout << a[i] << endl << num << endl; 
+    }
 
     return 0;
 }

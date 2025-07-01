@@ -7,7 +7,7 @@ events:
       - "/usr/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.8.0-1028-raspi - aarch64
+      The system is: Linux - 6.8.0-1029-raspi - aarch64
   -
     kind: "message-v1"
     backtrace:
@@ -61,24 +61,21 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc"
-      binary: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc"
+      source: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC"
+      binary: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-19"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: "-fuse-ld=lld"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc'
+        Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12758/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_12758.dir/build.make CMakeFiles/cmTC_12758.dir/build
-        gmake[1]: Entering directory '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc'
-        Building C object CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o
-        /usr/bin/clang-19   -v -MD -MT CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/ninja -v cmTC_885f9
+        [1/2] /usr/bin/clang-19   -v -MD -MT CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c
         Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)
         Target: aarch64-unknown-linux-gnu
         Thread model: posix
@@ -88,7 +85,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+         "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c
         clang -cc1 version 19.1.1 based upon LLVM 19.1.1 default target aarch64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -99,8 +96,7 @@ events:
          /usr/include/aarch64-linux-gnu
          /usr/include
         End of search list.
-        Linking C executable cmTC_12758
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12758.dir/link.txt --verbose=1
+        [2/2] : && /usr/bin/clang-19  -fuse-ld=lld -v -Wl,-v CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -o cmTC_885f9   && :
         Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)
         Target: aarch64-unknown-linux-gnu
         Thread model: posix
@@ -109,10 +105,8 @@ events:
         Selected GCC installation: /usr/lib/gcc/aarch64-linux-gnu/13
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
-         "/usr/bin/ld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_12758 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
-        GNU ld (GNU Binutils for Ubuntu) 2.42
-        /usr/bin/clang-19  -v -Wl,-v CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -o cmTC_12758
-        gmake[1]: Leaving directory '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc'
+         "/usr/lib/llvm-19/bin/ld.lld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_885f9 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
+        Ubuntu LLD 19.1.1 (compatible with GNU linkers)
         
       exitCode: 0
   -
@@ -147,13 +141,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc']
+        ignore line: [Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12758/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_12758.dir/build.make CMakeFiles/cmTC_12758.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc']
-        ignore line: [Building C object CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/clang-19   -v -MD -MT CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_885f9]
+        ignore line: [[1/2] /usr/bin/clang-19   -v -MD -MT CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
         ignore line: [Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)]
         ignore line: [Target: aarch64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -165,7 +156,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Tx81uc -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jrnuUC -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 19.1.1 based upon LLVM 19.1.1 default target aarch64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -176,8 +167,7 @@ events:
         ignore line: [ /usr/include/aarch64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_12758]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12758.dir/link.txt --verbose=1]
+        ignore line: [[2/2] : && /usr/bin/clang-19  -fuse-ld=lld -v -Wl,-v CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -o cmTC_885f9   && :]
         ignore line: [Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)]
         ignore line: [Target: aarch64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -188,8 +178,8 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_12758 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
-          arg [/usr/bin/ld] ==> ignore
+        link line: [ "/usr/lib/llvm-19/bin/ld.lld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_885f9 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/lib/llvm-19/bin/ld.lld] ==> ignore
           arg [-EL] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -201,7 +191,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib/ld-linux-aarch64.so.1] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_12758] ==> ignore
+          arg [cmTC_885f9] ==> ignore
           arg [/lib/aarch64-linux-gnu/Scrt1.o] ==> obj [/lib/aarch64-linux-gnu/Scrt1.o]
           arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
@@ -212,7 +202,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_12758.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_885f9.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--as-needed] ==> ignore
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -224,7 +214,7 @@ events:
           arg [--no-as-needed] ==> ignore
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
           arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
-        linker tool for 'C': /usr/bin/ld
+        linker tool for 'C': /usr/lib/llvm-19/bin/ld.lld
         collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
         collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
         collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
@@ -245,8 +235,8 @@ events:
       - "/usr/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils for Ubuntu) 2.42
+      Running the C compiler's linker: "/usr/lib/llvm-19/bin/ld.lld" "-v"
+      Ubuntu LLD 19.1.1 (compatible with GNU linkers)
   -
     kind: "try_compile-v1"
     backtrace:
@@ -256,25 +246,22 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN"
-      binary: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN"
+      source: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J"
+      binary: "/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-19"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: "-fuse-ld=lld"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN'
+        Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1010a/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1010a.dir/build.make CMakeFiles/cmTC_1010a.dir/build
-        gmake[1]: Entering directory '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN'
-        Building CXX object CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/clang++-19   -v -MD -MT CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b7795
+        [1/2] /usr/bin/clang++-19   -v -MD -MT CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
         Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)
         Target: aarch64-unknown-linux-gnu
         Thread model: posix
@@ -284,7 +271,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+         "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 19.1.1 based upon LLVM 19.1.1 default target aarch64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -298,8 +285,7 @@ events:
          /usr/include/aarch64-linux-gnu
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_1010a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1010a.dir/link.txt --verbose=1
+        [2/2] : && /usr/bin/clang++-19  -fuse-ld=lld -v -Wl,-v CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b7795   && :
         Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)
         Target: aarch64-unknown-linux-gnu
         Thread model: posix
@@ -308,10 +294,8 @@ events:
         Selected GCC installation: /usr/lib/gcc/aarch64-linux-gnu/13
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
-         "/usr/bin/ld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_1010a /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
-        GNU ld (GNU Binutils for Ubuntu) 2.42
-        /usr/bin/clang++-19  -v -Wl,-v CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1010a
-        gmake[1]: Leaving directory '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN'
+         "/usr/lib/llvm-19/bin/ld.lld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_b7795 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
+        Ubuntu LLD 19.1.1 (compatible with GNU linkers)
         
       exitCode: 0
   -
@@ -352,13 +336,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN']
+        ignore line: [Change Dir: '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1010a/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_1010a.dir/build.make CMakeFiles/cmTC_1010a.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN']
-        ignore line: [Building CXX object CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/clang++-19   -v -MD -MT CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_b7795]
+        ignore line: [[1/2] /usr/bin/clang++-19   -v -MD -MT CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)]
         ignore line: [Target: aarch64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -370,7 +351,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GAJIGN -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/usr/lib/llvm-19/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J -v -fcoverage-compilation-dir=/home/felixab/workspace/code/c/test_c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7UX04J -resource-dir /usr/lib/llvm-19/lib/clang/19 -dependency-file CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13 -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-19/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 19.1.1 based upon LLVM 19.1.1 default target aarch64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -384,8 +365,7 @@ events:
         ignore line: [ /usr/include/aarch64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_1010a]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1010a.dir/link.txt --verbose=1]
+        ignore line: [[2/2] : && /usr/bin/clang++-19  -fuse-ld=lld -v -Wl,-v CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b7795   && :]
         ignore line: [Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)]
         ignore line: [Target: aarch64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -396,8 +376,8 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_1010a /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
-          arg [/usr/bin/ld] ==> ignore
+        link line: [ "/usr/lib/llvm-19/bin/ld.lld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_b7795 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/llvm-19/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/lib/llvm-19/bin/ld.lld] ==> ignore
           arg [-EL] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -409,7 +389,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib/ld-linux-aarch64.so.1] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1010a] ==> ignore
+          arg [cmTC_b7795] ==> ignore
           arg [/lib/aarch64-linux-gnu/Scrt1.o] ==> obj [/lib/aarch64-linux-gnu/Scrt1.o]
           arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
@@ -420,7 +400,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_1010a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_b7795.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -430,7 +410,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
           arg [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
           arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
-        linker tool for 'CXX': /usr/bin/ld
+        linker tool for 'CXX': /usr/lib/llvm-19/bin/ld.lld
         collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
         collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
         collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
@@ -451,6 +431,6 @@ events:
       - "/usr/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils for Ubuntu) 2.42
+      Running the CXX compiler's linker: "/usr/lib/llvm-19/bin/ld.lld" "-v"
+      Ubuntu LLD 19.1.1 (compatible with GNU linkers)
 ...
